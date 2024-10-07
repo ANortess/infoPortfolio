@@ -18,6 +18,7 @@
 
 - **Email**: [nortes.drh@gmail.com](mailto:nortes.drh@gmail.com)
 - **LinkedIn**: [in/alejandro-nortes](https://www.linkedin.com/in/alejandro-nortes/)
+- **Portafolio**: [miPortafolio](https://anortess.github.io/infoPortfolio/)
 
 Si tienes alguna pregunta o te gustaría colaborar en algún proyecto, ¡no dudes en contactarme!
 
