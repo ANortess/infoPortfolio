@@ -1,0 +1,873 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,700;1,200;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+}
+
+/*-------------------------------------------CONTENEDOR----------------------------------------------*/
+.container {
+    background-color: rgb(64, 64, 63);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    box-sizing: border-box; /* Asegura que el padding se incluya dentro del ancho */
+    z-index: 1000;
+}
+
+/* Ocultar el menú en pantallas pequeñas */
+@media (max-width: 1000px) {
+    .container {
+        display: none;
+    }
+
+    /* Mostrar el icono de las tres barras */
+    .nav_toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 40px;
+        color: rgb(226, 211, 210);
+        padding: 10px;
+        position: fixed; /* Fijo en la pantalla */
+        top: 20px;       /* Espaciado desde la parte superior */
+        left: 20px;      /* Espaciado desde la parte izquierda */
+        z-index: 10000; 
+        transition: 0.3s;
+    }
+}
+
+.nav_toggle:hover {
+    transform: scale(1.10);
+}
+
+/* Estilos para el menú superpuesto */
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro con transparencia */
+    z-index: 9999;
+    display: none; /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+}
+.overlay-menu-list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.my_image img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    border-radius: 50%; /* Si quieres que la imagen sea redonda */
+    margin-bottom: 20px; /* Espacio entre la imagen y el resto del menú */
+    transition: 0.3s;
+}
+.my_image img:hover {
+    transform: scale(1.15);
+}
+.overlay-menu-list li {
+    margin: 20px 0;
+}
+
+.overlay-menu-list a {
+    color: rgb(226, 211, 210);
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.overlay-menu-list a:hover {
+    color: rgb(242, 90, 90); /* Cambia el color cuando se pasa el cursor */
+}
+
+/* Cuando el menú está activo */
+.overlay-menu.show {
+    display: flex; /* Mostrar el menú como un flexbox centrado */
+}
+
+/* Cuando el menú está oculto */
+.menu-hidden .inicio {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu-hidden .about_me {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu-hidden .skills {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu-hidden .proyect {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.menu-hidden .contact {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*----------------------------------------------LOGO----------------------------------------------*/
+.container .nav_logo{
+    cursor: pointer;
+    margin-top: 40px; /* Espacio entre el logo y el menú */
+    padding-bottom: 20px;
+}
+.container .nav_logo img{
+    height: 80px;
+    width: auto;
+    transition: 0.3s;
+    
+    border: 1px solid rgba(245, 245, 245, 0); /* Borde con color */
+    border-radius: 100%;
+    box-shadow: 2px 3px 25px rgba(23, 23, 23, 0.8) 
+}
+.container .nav_logo img:hover{
+    transform: scale(1.5);
+}
+
+/*----------------------------------------------MENU DE NAVEGACION----------------------------------------------*/
+.container .nav_menu {
+    list-style: none;
+    width: 100%; /* Para que ocupe todo el ancho del contenedor */
+    padding: 0;
+    margin: 0;
+}
+.container .nav_menu li{
+    display: block; /* Para que los elementos del menú estén apilados verticalmente */
+    margin: 30px 0; /* Espaciado entre los elementos del menú */
+    position: relative;
+}
+.container .nav_menu li a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    transition: 0.4s ease-out;
+    width: 100%; /* Que ocupe el ancho completo del contenedor */
+    text-align: center; /* Centrar el texto */
+}
+.container .nav_menu li a:hover{
+    color: rgb(242, 90, 90);
+}
+.container ul li::before{
+    content: "";
+    height: 3px;
+    width: 100%;
+    opacity: 0;
+    background: rgb(242, 90, 90);
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajustado para apilar correctamente los subrayados */
+    transition: 0.4s ease-out;
+}
+
+.container ul li:hover::before{
+    opacity: 1;
+    bottom: 0px;
+}
+
+
+/*----------------------------------------------INICIO----------------------------------------------*/
+.inicio {
+    margin-left: 300px;
+    margin-right: 100px;
+    height: 100vh; /* La sección ocupa el 100% de la altura de la ventana */
+}
+.inicio .name {
+    padding-top: 180px;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(197, 75, 75);
+    text-decoration-style: solid;
+
+}
+
+
+.inicio .whatIdo {
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    text-decoration-style: solid;
+}
+
+.inicio .contactWithMe {
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    text-decoration-style: solid;
+}
+
+.go_cvc {
+    padding-top: 60px;
+    padding-left: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(197, 75, 75); /* Color de fondo del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Opcional, para bordes redondeados */
+    transition: background-color 0.3s ease; /* Opcional, para un efecto de transición en el color de fondo */
+}
+
+.button:hover {
+    background-color: rgb(150, 60, 60); /* Color de fondo del botón en estado hover */
+}
+
+
+/*-------------------------------------------------------------ABOUT_ME----------------------------------------------------------------*/
+
+.about_me {
+    margin-left: 300px;
+    margin-right: 100px;
+    position: relative;
+}
+.about_me .title {
+    padding-top: 120px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(197, 75, 75);
+    text-decoration-style: solid;
+    text-align: center;
+
+}
+.about_me .name {
+    padding-top: 80px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    text-decoration-style: solid;
+}
+
+.about_me .text {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    text-decoration-style: solid;
+    text-align: justify;
+}
+
+.about_me .table {
+    list-style-type: none; /* Remove default list bullets */
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.about_me .table li {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    position: relative;
+    margin: 10px 0;
+    padding-left: 30px; /* Space for the arrow */
+}
+
+.about_me .table li::before {
+    content: "→"; /* Unicode character for right arrow */
+    color: rgb(197, 75, 75); /* Red color for the arrow */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.about_me .table .firts {
+    color: rgb(197, 75, 75); /* Red color for "Cumple" */
+}
+
+.about_me .table .second {
+    color: rgb(226, 211, 210); /* White color for "alex" */
+}
+
+/*-------------------------------------------------------------SKILLS----------------------------------------------------------------*/
+
+.skills {
+    position: relative;
+    margin-left: 300px;
+    margin-right: 100px;
+}
+.skills .title {
+    padding-top: 120px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(197, 75, 75);
+    text-decoration-style: solid;
+
+}
+
+.skills .languages {
+    padding-top: 80px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    text-decoration-style: solid;
+}
+
+.skills .languages-container {
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+    gap: 0px; /* Espacio entre los cuadros */
+}
+
+.language {
+    align-items: center; /* Centra los elementos horizontalmente */
+    display:flex;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px;
+    margin: 10px; /* Espacio entre los cuadros */
+    transition: transform 0.3s ease; /* Animación al pasar el ratón */
+    box-sizing: border-box;
+}
+.language:hover {
+    transform: scale(1.05); /* Agrandar ligeramente al pasar el ratón */
+}
+
+.language img {
+    width: 25px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Color de fondo personalizado para cada lenguaje */
+.language.html {
+    background-color: #ed7d61; /* Color de fondo para HTML */
+}
+
+.language.css {
+    background-color: #698fe7; /* Color de fondo para CSS */
+}
+
+.language.js {
+    background-color: #2c2c2c; /* Color de fondo para JavaScript */
+}
+
+.language.python {
+    background-color: #5ec2a8; /* Color de fondo para Python */
+}
+
+.language.csharp {
+    background-color: #683d6f; /* Color de fondo para C# */
+}
+
+.language.kotlin {
+    background-color: #cf9a5a; /* Color de fondo para Kotlin */
+}
+
+.language span {
+    font-size: 20px;
+    margin-top: 7px;
+    font-weight: 700;
+    color: rgb(226, 211, 210); /* Color del nombre del lenguaje */
+}
+
+.skills .softwares {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    text-decoration-style: solid;
+}
+
+.skills .software-container {
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+    gap: 0px; /* Espacio entre los cuadros */
+}
+
+.software {
+    align-items: center; /* Centra los elementos horizontalmente */
+    display:flex;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px;
+    margin: 10px; /* Espacio entre los cuadros */
+    transition: transform 0.3s ease; /* Animación al pasar el ratón */
+    box-sizing: border-box;
+}
+.software:hover {
+    transform: scale(1.05); /* Agrandar ligeramente al pasar el ratón */
+}
+
+.software img {
+    width: 25px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.software.unity {
+    background-color: #444444; /* Color de fondo para JavaScript */
+}
+.software.android {
+    background-color: #56a5bd; /* Color de fondo para JavaScript */
+}
+.software.visual {
+    background-color: #9e64a2; /* Color de fondo para JavaScript */
+}
+
+.software span {
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+    color: rgb(226, 211, 210); /* Color del nombre del lenguaje */
+}
+
+.skills .habilities {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    text-decoration-style: solid;
+}
+
+.skills .hability-container {
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+    gap: 0px; /* Espacio entre los cuadros */
+}
+
+.hability {
+    align-items: center; /* Centra los elementos horizontalmente */
+    display:flex;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px;
+    margin: 10px; /* Espacio entre los cuadros */
+    transition: transform 0.3s ease; /* Animación al pasar el ratón */
+    box-sizing: border-box;
+}
+.hability:hover {
+    transform: scale(1.05); /* Agrandar ligeramente al pasar el ratón */
+}
+
+.hability img {
+    width: 25px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    border-radius: 6px;
+}
+
+.hability.fellowship {
+    background-color: #5d3161; /* Color de fondo para JavaScript */
+}
+.hability.teamwork {
+    background-color: #ab4f58; /* Color de fondo para JavaScript */
+}
+.hability.communication {
+    background-color: #559060; /* Color de fondo para JavaScript */
+}
+.hability.adaptability {
+    background-color: #ab9b5d; /* Color de fondo para JavaScript */
+}
+.hability.decisionMaking {
+    background-color: #b28d59; /* Color de fondo para JavaScript */
+}
+.hability.creativity {
+    background-color: #6db9c5; /* Color de fondo para JavaScript */
+}
+.hability.organizational {
+    background-color: #8f6572; /* Color de fondo para JavaScript */
+}
+
+.hability span {
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+    color: rgb(226, 211, 210); /* Color del nombre del lenguaje */
+}
+
+/*-----------------------------------------------------------PROYECTS----------------------------------------------------------------*/
+.proyect {
+    margin-left: 300px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.proyects_title {
+    text-align: center;
+    position: relative;
+    padding-top: 120px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(197, 75, 75);
+    text-decoration-style: solid;
+}
+
+.divider_title {
+    height: 2px; /* Altura de la línea */
+    background-color: rgba(128, 128, 128, 0.149); /* Color gris con 50% de opacidad */
+    margin-top: 20px; /* Espacio encima de la línea */
+    margin-left: 35%;
+    width: 30%; /* Ancho completo del contenedor */
+    position: relative; /* Posición absoluta para colocarla al final */
+}
+
+.carousel-items {
+    display: flex; /* Para alinearlos en fila o como lo desees */
+    flex-direction: column; /* Cambiar a columna para uno debajo del otro */
+    margin-top: 80px;
+}
+
+.carousel-item {
+    margin-bottom: 20px; /* Espacio entre elementos */
+    position: relative; 
+}
+
+.game-title {
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    position: relative; /* Posiciona el título en la parte superior */
+    top: 20px; /* Ajusta según sea necesario */
+    color: rgb(226, 211, 210);
+}
+.game_text {
+    margin-top: 40px;
+    font-size: 20px; /* Tamaño del título */
+    font-weight: 700; /* Negrita */
+    position: relative; /* Posiciona el título en la parte superior */
+    width: 70%; /* Establece el ancho al 30% */
+    background-color: rgba(197, 75, 75, 0.8); /* Color de fondo con algo de transparencia */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 2px; /* Bordes redondeados (opcional) */
+    color: rgb(226, 211, 210);
+}
+
+.image-links {
+    display: flex; /* Muestra las imágenes en fila */
+    margin-top: 20px; /* Espacio encima de las imágenes */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.link-image {
+    width: 35px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+}
+
+.language-boxes {
+    display: flex; /* Muestra los recuadros en fila */
+    margin-top: 20px; /* Espacio encima de los recuadros */
+    gap: 15px; /* Espacio entre los recuadros */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+}
+
+.language-box {
+    display: flex; /* Para alinear la imagen y el texto */
+    width: auto; /* Ancho del recuadro */
+    height: auto; /* Altura del recuadro (ajusta según sea necesario) */
+    background-color: rgba(226, 211, 210, 0.8); /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 8px; /* Espaciado interno */
+}
+
+.language-image {
+    width: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.language-text {
+    margin-left: 4px;
+    margin-top: 4px; /* Espacio entre la imagen y el texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-weight: 700; /* Negrita */
+    text-align: center; /* Centra el texto */
+    color:rgb(226, 211, 210);
+}
+
+.image-links {
+    display: flex; /* Muestra las imágenes en fila */
+    margin-top: 20px; /* Espacio encima de las imágenes */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.link-image {
+    width: 35px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.image_side img {
+    height: 230px;
+    width: auto;
+    position: absolute;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    z-index: -1; /* Envía la imagen al fondo */
+    top: 10px; /* Alinea al borde superior */
+    left: 30px; /* Alinea al borde izquierdo */
+    opacity: 0.8;
+
+}
+
+.game_text.text_right {
+    margin-left: auto; /* Empuja el cuadro hacia la derecha */
+    margin-right: 30px;
+    text-align: right;
+    padding-left: 30px;
+}
+
+.game-title.title_right {
+    margin-right: 30px;
+    text-align: right; /* Centra el texto horizontalmente */
+}
+
+.image-links.right_links {
+    margin-right: 30px;
+    margin-left: 30px;
+    justify-content: right;
+}
+
+.language-boxes.tools_right {
+    justify-content: right; /* Alinea a la izquierda (o flex-end para la derecha) */
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.image_side.img_right img {
+    top: 10px; /* Alinea al borde superior */
+    left: 30px; /* Alinea al borde izquierdo */
+    opacity: 0.8;
+}
+
+.game-title.title_left {
+    margin-left: 30px;
+    text-align: left;
+}
+
+.game_text.text_left {
+    margin-right: auto; /* Empuja el cuadro hacia la derecha */
+    text-align: left;
+    margin-left: 30px;
+}
+
+.image-links.left_links {
+    margin-left: 30px;
+    justify-content: left;
+}
+
+.language-boxes.tools_left {
+    justify-content: left; /* Alinea a la izquierda (o flex-end para la derecha) */
+    margin-left: 30px;
+}
+
+.image_side.img_left img {
+    top: 10px; /* Alinea al borde superior */
+    left: auto; /* Elimina el margen izquierdo */
+    right: 30px; /* Alinea la imagen al borde derecho */
+    opacity: 0.8;
+    display: block;
+}
+
+.language-box.unity {
+    background-color: #444444; /* Color de fondo para Unity */
+}
+.language-box.vc {
+    background-color: #9e64a2; /* Color de fondo para VisualStudio */
+}
+.language-box.android {
+    background-color: #56a5bd; /* Color de fondo para AndroidStudio */
+}
+.language-box.html {
+    background-color: #ed7d61; /* Color de fondo para HTML */
+}
+.language-box.css {
+    background-color: #698fe7; /* Color de fondo para CSS */
+}
+.language-box.js {
+    background-color: #2c2c2c; /* Color de fondo para JavaScript */
+}
+.language-box.python {
+    background-color: #5ec2a8; /* Color de fondo para Python */
+}
+.language-box.csharp {
+    background-color: #683d6f; /* Color de fondo para C# */
+}
+.language-box.kotlin {
+    background-color: #cf9a5a /* Color de fondo para Kotlin */
+}
+
+
+.divider {
+    height: 2px; /* Altura de la línea */
+    background-color: rgba(128, 128, 128, 0.17); /* Color gris con 50% de opacidad */
+    margin-top: 40px; /* Espacio encima de la línea */
+    margin-bottom: 20px;
+    width: 100%; /* Ancho completo del contenedor */
+    position: relative; /* Posición absoluta para colocarla al final */
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.visible {
+    display: block;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.show-more, .show-less {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    background-color: rgba(197, 75, 75);
+    color: rgba(226, 211, 210, 0.8);;
+    border: none;
+    cursor: pointer;
+}
+
+.show-more:hover, .show-less:hover {
+    background-color: rgb(135, 53, 53);
+}
+
+.game_title_redimensional {
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    position: relative; /* Posiciona el título en la parte superior */
+    top: 20px; /* Ajusta según sea necesario */
+    color: rgb(226, 211, 210);
+    text-align: center;
+}
+
+.image_redimensional {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image_redimensional img {
+    height: auto; /* Permite que la altura se ajuste proporcionalmente */
+    width: 100%; /* La imagen ocupará el 80% del ancho disponible */
+    max-width: 100%; /* Evita que la imagen crezca más allá de su tamaño original */
+    margin-left: auto; /* Márgenes automáticos centran la imagen */
+    margin-right: auto; /* Márgenes automáticos centran la imagen */
+}
+
+.game_text_redimensional {
+    margin-top: 10px;
+    font-size: 15px; /* Tamaño del título */
+    text-align: justify;
+    font-weight: 700; /* Negrita */
+    position: relative; /* Posiciona el título en la parte superior */
+    background-color: rgba(197, 75, 75, 0.8); /* Color de fondo con algo de transparencia */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 2px; /* Bordes redondeados (opcional) */
+    color: rgb(226, 211, 210);
+    height: auto; /* Permite que la altura se ajuste proporcionalmente */
+    width: 100%; /* La imagen ocupará el 80% del ancho disponible */
+    max-width: 100%; /* Evita que la imagen crezca más allá de su tamaño original */
+    margin-left: auto; /* Márgenes automáticos centran la imagen */
+    margin-right: auto; /* Márgenes automáticos centran la imagen */
+}
+.language_boxes_redimensional {
+    display: flex; /* Muestra los recuadros en fila */
+    margin-top: 20px; /* Espacio encima de los recuadros */
+    gap: 15px; /* Espacio entre los recuadros */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+    width: 100%;
+    text-align: center;
+    justify-content: center; /* Centra horizontalmente los ítems dentro del contenedor */
+    align-items: center; 
+}
+
+.image_links_redimensional {
+    display: flex; /* Muestra las imágenes en fila */
+    margin-top: 20px; /* Espacio encima de las imágenes */
+    gap: 15px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no caben */
+    width: 100%;
+    text-align: center;
+    justify-content: center; /* Centra horizontalmente los ítems dentro del contenedor */
+    align-items: center; 
+}
+/*-----------------------------------------------------------CONTACT----------------------------------------------------------------*/
+
+.contact {
+    margin-left: 300px;
+    margin-right: 100px;
+    height: 100vh;
+    position: relative;
+}
+.contact .title {
+    padding-top: 120px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(197, 75, 75);
+    text-decoration-style: solid;
+    text-align: center;
+
+}
+
+.contact .links_info_me {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration-style: solid;
+}
+.contact .links_info_me span{
+    padding-top: 5%;
+    color: rgb(226, 211, 210);
+}
+.contact .links_info_me a{
+    color: rgb(224 , 216, 176);
+    text-decoration: none;
+}
+
+.info_web {
+    padding-top: 20%;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration-style: solid;
+    color: rgb(226, 211, 210);
+}
+.language-box {
+    transition:transform 0.3s ease;
+}
+
+.language-box:hover {
+    transform: scale(1.05);
+}
+
