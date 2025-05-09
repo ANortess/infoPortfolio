@@ -313,6 +313,59 @@ body {
     color: rgb(226, 211, 210); /* White color for "alex" */
 }
 
+/*-------------------------------------------------------------CAREER----------------------------------------------------------------*/
+.career {
+    margin-left: 300px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.career .title {
+    padding-top: 120px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(197, 75, 75); /* mismo rojo */
+    text-align: center;
+}
+
+.career .text {
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 211, 210); /* mismo blanco */
+    text-align: justify;
+}
+
+.career .table {
+    list-style-type: none;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.career .table li {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    position: relative;
+    margin: 10px 0;
+    padding-left: 30px;
+}
+
+.career .table li::before {
+    content: "→";
+    color: rgb(197, 75, 75);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.career .table .firts {
+    color: rgb(197, 75, 75);
+}
+
+.career .table .second {
+    color: rgb(226, 211, 210);
+}
 /*-------------------------------------------------------------SKILLS----------------------------------------------------------------*/
 
 .skills {
