@@ -448,6 +448,10 @@ body {
     background-color: #cf9a5a; /* Color de fondo para Kotlin */
 }
 
+.language.java {
+    background-color: #88aae2; /* Color de fondo para Kotlin */
+}
+
 .language span {
     font-size: 20px;
     margin-top: 7px;
@@ -497,6 +501,9 @@ body {
 }
 .software.visual {
     background-color: #9e64a2; /* Color de fondo para JavaScript */
+}
+.software.mysql {
+    background-color: #cb9145; /* Color de fondo para JavaScript */
 }
 
 .software span {
