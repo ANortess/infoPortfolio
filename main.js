@@ -23,7 +23,7 @@ function checkScreenWidthAndChangeClass() {
     const title_thelaststronghold = document.getElementById('title_thelaststronghold');
     const image_thelaststronghold = document.getElementById('image_thelaststronghold');
     const text_thelaststronghold = document.getElementById('text_thelaststronghold');
-    const languajes_thelaststronghold = document.getElementById('languaje_thelaststronghold');
+    const languajes_thelaststronghold = document.getElementById('languajes_thelaststronghold');
     const links_thelaststronghold = document.getElementById('links_thelaststronghold');
 
     const title_coolvac = document.getElementById('title_coolvac');
