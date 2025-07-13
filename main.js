@@ -20,6 +20,12 @@ function checkScreenWidth() {
 }
 
 function checkScreenWidthAndChangeClass() {
+    const title_thelaststronghold = document.getElementById('title_thelaststronghold');
+    const image_thelaststronghold = document.getElementById('image_thelaststronghold');
+    const text_thelaststronghold = document.getElementById('text_thelaststronghold');
+    const languajes_thelaststronghold = document.getElementById('languaje_thelaststronghold');
+    const links_thelaststronghold = document.getElementById('links_thelaststronghold');
+
     const title_coolvac = document.getElementById('title_coolvac');
     const image_coolvac = document.getElementById('image_coolvac');
     const text_coolvac = document.getElementById('text_coolvac');
@@ -45,6 +51,12 @@ function checkScreenWidthAndChangeClass() {
     const links_zombie = document.getElementById('links_zombie');
 
     if (window.innerWidth <= 750) {
+        title_thelaststronghold.className = 'game_title_redimensional'; 
+        image_thelaststronghold.className = 'image_redimensional';
+        text_thelaststronghold.className = 'game_text_redimensional';
+        languajes_thelaststronghold.className = 'language_boxes_redimensional';
+        links_thelaststronghold.className = 'image_links_redimensional';
+
         title_coolvac.className = 'game_title_redimensional'; 
         image_coolvac.className = 'image_redimensional';
         text_coolvac.className = 'game_text_redimensional';
@@ -69,6 +81,12 @@ function checkScreenWidthAndChangeClass() {
         languajes_zombie.className = 'language_boxes_redimensional';
         links_zombie.className = 'image_links_redimensional';
     } else {
+        title_thelaststronghold.className = 'game-title title_right';
+        image_thelaststronghold.className = 'image_side img_right';
+        text_thelaststronghold.className = 'game_text text_right';
+        languajes_thelaststronghold.className = 'language-boxes tools_right';
+        links_thelaststronghold.className = 'image-links right_links';
+
         title_coolvac.className = 'game-title title_right';
         image_coolvac.className = 'image_side img_right';
         text_coolvac.className = 'game_text text_right';
