@@ -81,11 +81,11 @@ function checkScreenWidthAndChangeClass() {
         languajes_zombie.className = 'language_boxes_redimensional';
         links_zombie.className = 'image_links_redimensional';
     } else {
-        title_thelaststronghold.className = 'game-title title_right';
-        image_thelaststronghold.className = 'image_side img_right';
-        text_thelaststronghold.className = 'game_text text_right';
-        languajes_thelaststronghold.className = 'language-boxes tools_right';
-        links_thelaststronghold.className = 'image-links right_links';
+        title_thelaststronghold.className = 'game-title title_left';
+        image_thelaststronghold.className = 'image_side img_left';
+        text_thelaststronghold.className = 'game_text text_left';
+        languajes_thelaststronghold.className = 'language-boxes tools_left';
+        links_thelaststronghold.className = 'image-links left_links';
 
         title_coolvac.className = 'game-title title_right';
         image_coolvac.className = 'image_side img_right';
