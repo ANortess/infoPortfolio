@@ -82,7 +82,7 @@ body {
     transition: 0.3s;
 }
 .my_image img:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 .overlay-menu-list li {
     margin: 20px 0;
@@ -147,6 +147,7 @@ body {
     width: auto;
     transition: 0.3s;
     
+    background-color: rgb(134, 134, 134);
     border: 1px solid rgba(245, 245, 245, 0); /* Borde con color */
     border-radius: 100%;
     box-shadow: 2px 3px 25px rgba(23, 23, 23, 0.8) 
@@ -273,7 +274,7 @@ body {
     padding-top: 80px;
     font-size: 30px;
     font-weight: 700;
-    color: rgb(226, 211, 210);
+    color: rgb(197, 75, 75);
     text-decoration-style: solid;
 }
 
