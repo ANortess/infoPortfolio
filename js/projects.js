@@ -1090,27 +1090,27 @@ function createTechnologyElements(technologies) {
 
         numpy: {
             name: 'NumPy',
-            image: '../assets/skills/numpy_logo.png'
+            image: 'assets/skills/numpy_logo.png'
         },
 
         pandas: {
             name: 'Pandas',
-            image: '../assets/skills/pandas_logo.png'
+            image: 'assets/skills/pandas_logo.png'
         },
 
         matplotlib: {
             name: 'Matplotlib',
-            image: '../assets/skills/matplotlib_logo.png'
+            image: 'assets/skills/matplotlib_logo.png'
         },
 
         seaborn: {
             name: 'Seaborn',
-            image: '../assets/skills/seaborn_logo.png'
+            image: 'assets/skills/seaborn_logo.png'
         },
 
         statsmodels: {
             name: 'Statsmodels',
-            image: '../assets/skills/statsmodels_logo.png'
+            image: 'assets/skills/statsmodels_logo.png'
         }
     };
 
