@@ -1,0 +1,416 @@
+/* =====================================================
+   SKILLS
+===================================================== */
+
+#skills {
+    min-height: 100vh;
+}
+
+.skills {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.skills_container {
+    width: 100%;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.skills_section {
+    margin-bottom: 45px;
+}
+
+
+/* =====================================================
+   MAIN SKILLS
+===================================================== */
+
+.skills_featured {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.skill_main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+
+    min-width: 0;
+    min-height: 58px;
+    padding: 14px 32px;
+
+    border-radius: 7px;
+    background-color: rgba(226, 211, 210, 0.07);
+    border: 1px solid rgba(226, 211, 210, 0.13);
+    border-bottom: 3px solid currentColor;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.skill_main:hover {
+    transform: translateY(-3px);
+
+    background-color:
+        rgba(226, 211, 210, 0.12);
+}
+
+.skill_main img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.skill_main span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   DATA
+===================================================== */
+
+.skill_main.python {
+    color: #5ec2a8;
+}
+
+.skill_main.powerbi {
+    color: #d6b84c;
+}
+
+.skill_main.sql {
+    color: #4479A1;
+}
+
+.skill_main.mysql {
+    color: #c96666;
+}
+
+
+/* =====================================================
+   GAME
+===================================================== */
+
+.skill_main.unity {
+    color: #888888;
+}
+
+.skill_main.csharp {
+    color: #8b5c93;
+}
+
+.skill_main.visual {
+    color: #9e64a2;
+}
+
+
+
+/* =====================================================
+   WEB
+===================================================== */
+
+.skill_main.javascript {
+    color: #f0db4f;
+}
+
+.skill_main.html {
+    color: #ed7d61;
+}
+
+.skill_main.css {
+    color: #698fe7;
+}
+
+
+/* =====================================================
+   SECONDARY SKILLS
+===================================================== */
+
+.skills_secondary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 10px;
+}
+
+
+.skill_tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 14px;
+
+    border-radius: 4px;
+
+    background-color:
+        rgba(226, 211, 210, 0.035);
+
+    border: 1px solid
+        rgba(226, 211, 210, 0.08);
+
+    border-bottom: 2px solid currentColor;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color:
+        rgba(226, 211, 210, 0.65);
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.skill_tag:hover {
+
+    transform: translateY(-1px);
+
+    background-color:
+        rgba(226, 211, 210, 0.08);
+}
+
+
+/* Data */
+
+.skill_tag.pandas {
+    color: #625595;
+}
+
+.skill_tag.numpy {
+    color: #4D77CF;
+}
+
+.skill_tag.matplotlib {
+    color: #11557C;
+}
+
+.skill_tag.seaborn {
+    color: #4C72B0;
+}
+
+.skill_tag.statsmodels {
+    color: #3B4F6B;
+}
+
+.skill_tag.sql {
+    color: #4479A1;
+}
+
+
+/* Game */
+
+.skill_tag.csharp {
+    color: #8b5c93;
+}
+
+.skill_tag.kotlin {
+    color: #dda159;
+}
+
+.skill_tag.android {
+    color: #56a5bd;
+}
+
+.skill_tag.visual {
+    color: #9e64a2;
+}
+
+
+/* Web */
+
+.skill_tag.node {
+    color: #345b33;
+}
+
+.skill_tag.html {
+    color: #ed7d61;
+}
+
+.skill_tag.css {
+    color: #698fe7;
+}
+
+.skill_tag.java {
+    color: #fc7222;
+}
+
+
+/* =====================================================
+   PERSONAL SKILLS
+===================================================== */
+
+.soft_skills {
+    margin-top: auto;
+    padding-top: 30px;
+    padding-bottom: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    line-height: 1.5;
+}
+
+.soft_skills span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #535353;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+}
+
+.soft_skills span:not(:last-child)::after {
+    content: "·";
+    margin: 0 14px;
+    color: #444;
+    font-weight: 700;
+}
+
+/* Soft skill accents */
+
+.soft-skill.fellowship {
+    color: #5d3161;
+}
+
+.soft-skill.teamwork {
+    color: #ab4f58;
+}
+
+.soft-skill.communication {
+    color: #559060;
+}
+
+.soft-skill.adaptability {
+    color: #ab9b5d;
+}
+
+.soft-skill.decision-making {
+    color: #b28d59;
+}
+
+.soft-skill.creativity {
+    color: #6db9c5;
+}
+
+.soft-skill.organizational {
+    color: #8f6572;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+@media (max-width: 750px) {
+
+    .skills_container {
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .skills_section {
+        margin-bottom: 38px;
+    }
+
+    .skills_section h3 {
+        font-size: 17px;
+    }
+
+    .skills_featured {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .skill_main {
+        min-height: 54px;
+        padding: 10px 14px;
+    }
+
+    .skill_main img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .skill_main span {
+        font-size: 14px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .skills_container {
+        margin-top: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .skills_section {
+        margin-bottom: 32px;
+    }
+
+    .skills_section h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .skills_featured {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .skill_main {
+        min-height: 50px;
+        padding: 9px 12px;
+    }
+
+    .skill_main img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .skill_main span {
+        font-size: 13px;
+    }
+
+    .skill_tag {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    .soft-skills-section {
+        margin-top: 5px;
+    }
+
+    .personal_skills {
+        padding: 20px 0;
+    }
+}

@@ -1,0 +1,109 @@
+/* =========================================================
+   HOME
+========================================================= */
+
+#home {
+    min-height: 100vh;
+}
+
+
+.inicio {
+    min-height: 100vh;
+
+    padding-top: 180px;
+}
+
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.inicio .name {
+    font-size: 60px;
+
+    font-weight: 700;
+
+    color: rgb(197, 75, 75);
+}
+
+
+/* =========================================================
+   WHAT I DO
+========================================================= */
+
+.inicio .whatIdo {
+    padding-top: 50px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: rgb(226, 211, 210);
+}
+
+
+/* =========================================================
+   CONTACT TEXT
+========================================================= */
+
+.inicio .contactWithMe {
+    padding-top: 40px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: rgb(226, 211, 210);
+}
+
+
+/* =========================================================
+   CV BUTTON
+========================================================= */
+
+.go_cvc {
+    padding-top: 60px;
+    padding-left: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.go_cvc .button-secondary {
+    opacity: 0.7;
+}
+
+.go_cvc .button-secondary:hover {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .inicio {
+        padding-top: 130px;
+    }
+
+    .inicio .name {
+        font-size: 45px;
+    }
+
+    .inicio .whatIdo {
+        font-size: 24px;
+    }
+
+    .inicio .contactWithMe {
+        font-size: 18px;
+    }
+
+    .go_cvc {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}

@@ -1,0 +1,94 @@
+/* =========================================================
+   ABOUT ME
+========================================================= */
+
+#career {
+    min-height: 100vh;
+}
+
+.career {
+    min-height: 100vh;
+    position: relative;
+    padding-top: 20px;
+}
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.career .name {
+    padding-top: 80px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(197, 75, 75);
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.career .text {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    text-align: justify;
+}
+
+/* =========================================================
+   INFORMATION LIST
+========================================================= */
+
+.career .table {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.career .table li {
+    position: relative;
+    margin: 10px 0;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(226, 211, 210);
+    line-height: 1.5;
+}
+
+.career .table li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(197, 75, 75);
+}
+
+.career .table .first {
+    color: rgb(197, 75, 75);
+}
+
+.career .table .second {
+    color: rgb(226, 211, 210);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+    .career .name {
+        padding-top: 60px;
+        font-size: 26px;
+    }
+
+    .career .text {
+        font-size: 17px;
+    }
+
+    .career .table {
+        padding-left: 0;
+    }
+
+    .career .table li {
+        font-size: 17px;
+    }
+}

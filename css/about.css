@@ -1,0 +1,107 @@
+/* =========================================================
+   ABOUT ME
+========================================================= */
+
+#about {
+    min-height: 100vh;
+}
+
+
+.about_me {
+    min-height: 100vh;
+
+    position: relative;
+    padding-top: 20px;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.about_me .text {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(186, 177, 177);
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   INFORMATION LIST
+========================================================= */
+
+.about_me .table {
+    list-style: none;
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+.about_me .table li {
+    position: relative;
+
+    margin: 10px 0;
+
+    padding-left: 30px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: rgb(226, 211, 210);
+}
+
+
+.about_me .table li::before {
+    content: "→";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    color: rgb(197, 75, 75);
+}
+
+
+.about_me .table .firts {
+    color: rgb(197, 75, 75);
+}
+
+
+.about_me .table .second {
+    color: rgb(226, 211, 210);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .about_me .name {
+        padding-top: 60px;
+
+        font-size: 26px;
+    }
+
+
+    .about_me .text {
+        font-size: 17px;
+    }
+
+
+    .about_me .table {
+        padding-left: 0;
+    }
+
+
+    .about_me .table li {
+        font-size: 17px;
+    }
+
+}

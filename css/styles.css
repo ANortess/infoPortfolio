@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,700;1,200;1,400&display=swap');
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(24, 24, 24);
+}
+
+
+/* =========================================================
+   GLOBAL LAYOUT
+========================================================= */
+
+main {
+    width: 100%;
+}
+
+
+/*
+    El menú ocupa 200px.
+    Todas las secciones de escritorio empiezan
+    después del menú.
+*/
+
+section {
+    margin-left: 300px;
+    margin-right: 100px;
+    position: relative;
+}
+
+
+/* =========================================================
+   COMMON TITLE
+========================================================= */
+
+.title {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(197, 75, 75);
+    letter-spacing: 4px;
+}
+
+.sub_title {
+    margin-top: 15px;
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(197, 75, 75);
+    letter-spacing: 2px;
+}
+
+
+.divider_title {
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.149);
+    width: 30%;
+    margin: 20px auto 0;
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+========================================================= */
+
+.button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: white;
+
+    background-color: rgb(197, 75, 75);
+
+    text-decoration: none;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+.button:hover {
+    background-color: rgb(150, 60, 60);
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .title {
+        padding-top: 100px;
+
+        font-size: 40px;
+    }
+
+
+    .divider_title {
+        width: 60%;
+    }
+
+}

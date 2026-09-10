@@ -1,0 +1,261 @@
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.container {
+    background-color: rgb(64, 64, 63);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100vh;
+
+    padding: 20px 0;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 200px;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.container .nav_logo {
+    cursor: pointer;
+
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+
+.container .nav_logo img {
+    width: auto;
+    height: 80px;
+
+    background-color: rgb(134, 134, 134);
+
+    border: 1px solid transparent;
+    border-radius: 100%;
+
+    box-shadow:
+        2px 3px 25px rgba(23, 23, 23, 0.8);
+
+    transition: transform 0.3s ease;
+}
+
+
+.container .nav_logo img:hover {
+    transform: scale(1.5);
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.container .nav_menu {
+    list-style: none;
+
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+.container .nav_menu li {
+    display: block;
+
+    margin: 30px 0;
+
+    position: relative;
+}
+
+
+.container .nav_menu li a {
+    display: block;
+
+    width: 100%;
+
+    padding: 10px 20px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    color: rgb(226, 211, 210);
+
+    text-align: center;
+
+    text-decoration: none;
+
+    transition: color 0.4s ease;
+}
+
+
+.container .nav_menu li a:hover {
+    color: rgb(242, 90, 90);
+}
+
+
+/* Underline */
+
+.container .nav_menu li::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: rgb(242, 90, 90);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.4s ease,
+        bottom 0.4s ease;
+}
+
+
+.container .nav_menu li:hover::before {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.nav_toggle {
+    display: none;
+}
+
+
+/* =========================================================
+   OVERLAY MENU
+========================================================= */
+
+.overlay-menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    z-index: 9999;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay-menu.show {
+    display: flex;
+}
+
+
+.overlay-menu-list {
+    list-style: none;
+
+    padding: 0;
+
+    text-align: center;
+}
+
+
+.overlay-menu-list li {
+    margin: 20px 0;
+}
+
+
+.overlay-menu-list a {
+    color: rgb(226, 211, 210);
+
+    font-size: 20px;
+    font-weight: 900;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.overlay-menu-list a:hover {
+    color: rgb(242, 90, 90);
+}
+
+
+.my_image img {
+    width: 100px;
+
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.my_image img:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .container {
+        display: none;
+    }
+
+
+    .nav_toggle {
+        display: block;
+
+        position: fixed;
+
+        top: 20px;
+        left: 20px;
+
+        padding: 10px;
+
+        font-size: 40px;
+
+        color: rgb(226, 211, 210);
+
+        cursor: pointer;
+
+        z-index: 10000;
+
+        transition: transform 0.3s ease;
+    }
+
+
+    .nav_toggle:hover {
+        transform: scale(1.1);
+    }
+
+}

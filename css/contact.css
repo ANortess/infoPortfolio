@@ -1,0 +1,106 @@
+/* =========================================================
+   CONTACT
+========================================================= */
+
+#contact {
+    min-height: 100vh;
+}
+
+
+.contact {
+    min-height: 100vh;
+
+    position: relative;
+    padding-top: 20px;
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION
+========================================================= */
+
+.contact .links_info_me {
+    display: flex;
+
+    flex-direction: column;
+
+    padding-top: 20px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+
+.contact .links_info_me span {
+    padding-top: 5%;
+
+    color: rgb(226, 211, 210);
+}
+
+
+.contact .links_info_me a {
+    color: rgb(224, 216, 176);
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.contact .links_info_me a:hover {
+    color: rgb(242, 90, 90);
+}
+
+
+/* =========================================================
+   WEBSITE INFORMATION
+========================================================= */
+
+.info_web {
+    padding-top: 20%;
+
+    margin-bottom: 10px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: rgb(226, 211, 210);
+}
+
+.signature {
+    margin-top: 70px;
+
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+
+    color: rgba(226, 211, 210, 0.45);
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .contact .links_info_me {
+        font-size: 22px;
+    }
+
+    .info_web {
+        padding-top: 15%;
+        font-size: 22px;
+    }
+
+    .signature {
+        margin-top: 50px;
+        padding-right: 10px;
+        font-size: 16px;
+    }
+
+}

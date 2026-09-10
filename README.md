@@ -1,39 +1,42 @@
-# Alejandro Nortes - Portfolio
+# 💻 Alejandro Nortes — Portfolio
 
-¡Bienvenido a mi portafolio! Este es un sitio web personal donde muestro mis proyectos y habilidades en desarrollo y diseño de videojuegos.
+Personal portfolio website showcasing my background, skills, career path and projects.
 
-## Tecnologías utilizadas
+## 🚀 About
 
-- **HTML**: Para estructurar el contenido.
-- **CSS**: Para dar estilo y diseño visual a la página.
-- **JavaScript (JS)**: Para la interactividad y animaciones.
+I'm **Alejandro Nortes**, a Software Developer and Data Science & AI student.
 
-## Secciones
+My background is in **Game Development**, with experience in software engineering, web development and data analysis.
 
-1. **Sobre mí**: Conoce más acerca de mi experiencia y habilidades.
-2. **Proyectos**: Un vistazo a los proyectos en los que he trabajado.
-3. **Contacto**: Información para contactarme o seguirme en redes sociales.
+Currently focused on **Python, SQL, Machine Learning and Data Science**.
 
-## Contacto
+## 🛠️ Skills
 
-- **Email**: [nortes.drh@gmail.com](mailto:nortes.drh@gmail.com)
-- **LinkedIn**: [in/alejandro-nortes](https://www.linkedin.com/in/alejandro-nortes/)
-- **Portafolio**: [miPortafolio](https://anortess.github.io/infoPortfolio/)
+- **Data:** Python · SQL · Power BI · MySQL · Pandas · NumPy
+- **Game Dev:** Unity · C# · Kotlin · Android Studio
+- **Web:** HTML · CSS · JavaScript · React · Node.js · Java
+- **Soft Skills:** Teamwork · Communication · Leadership · Problem Solving
 
-Si tienes alguna pregunta o te gustaría colaborar en algún proyecto, ¡no dudes en contactarme!
+## 📂 Projects
 
-## Instalación y uso local
+The portfolio includes projects across three main areas:
 
-Si deseas ejecutar este portafolio en tu máquina local:
+- 📊 **Data Analysis**
+- 🎮 **Video Games**
+- 🌐 **Web Development**
 
-1. Clona el repositorio:
+## 🎓 Education
 
-    ```bash
-    git clone https://github.com/username/portfolio.git
-    ```
+- **MSc Data Science & AI** — Evolve Academy
+- **BSc Video Game Design & Development** — Universitat Jaume I
 
-2. Abre el archivo `index.html` en tu navegador.
+## 📫 Contact
+
+- **Email:** nortes.drh@gmail.com
+- **LinkedIn:** [Alejandro Nortes](https://www.linkedin.com/in/alejandro-nortes-759a18297/)
 
 ---
 
-¡Gracias por visitar mi portafolio!
+> *Turning complex code into interactive experiences and actionable insights.*
+
+**— by Nortes**
