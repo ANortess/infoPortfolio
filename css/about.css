@@ -20,10 +20,9 @@
 
 .about_me .text {
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
-    color: rgb(186, 177, 177);
-    text-align: justify;
+    color: rgb(226, 211, 210);
     line-height: 1.5;
 }
 
@@ -37,6 +36,7 @@
 
     padding-top: 20px;
     padding-left: 20px;
+    line-height: 1.5;
 }
 
 
@@ -85,13 +85,12 @@
 
     .about_me .name {
         padding-top: 60px;
-
-        font-size: 26px;
+        font-size: 24px;
     }
 
 
     .about_me .text {
-        font-size: 17px;
+        font-size: 15px;
     }
 
 
@@ -101,7 +100,7 @@
 
 
     .about_me .table li {
-        font-size: 17px;
+        font-size: 14px;
     }
 
 }

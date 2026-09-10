@@ -75,13 +75,8 @@
 ========================================================= */
 
 @media (max-width: 750px) {
-    .career .name {
-        padding-top: 60px;
-        font-size: 26px;
-    }
-
     .career .text {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .career .table {
@@ -89,6 +84,6 @@
     }
 
     .career .table li {
-        font-size: 17px;
+        font-size: 16px;
     }
 }

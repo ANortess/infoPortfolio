@@ -259,8 +259,8 @@ const projects = [
             'python',
             'numpy',
             'pandas',
-            'matplotlib',
             'seaborn',
+            'matplotlib',
         ],
 
         links: [

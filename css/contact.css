@@ -89,18 +89,18 @@
 @media (max-width: 750px) {
 
     .contact .links_info_me {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .info_web {
         padding-top: 15%;
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .signature {
-        margin-top: 50px;
+        margin-top: 8dvh;
         padding-right: 10px;
-        font-size: 16px;
+        font-size: 12px;
     }
 
 }
