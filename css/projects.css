@@ -965,6 +965,41 @@
     background-color: #3B4F6B;
 }
 
+.language-box.transformers {
+    background-color: #D8BC69;
+}
+
+.language-box.pytorch {
+    background-color: #E8C2B8;
+}
+
+.language-box.bertopic {
+    background-color: #B5A3CD;
+}
+
+.language-box.scikitlearn {
+    background-color: #B5CDD9;
+}
+
+.language-box.xgboost {
+    background-color: #A9C7BC;
+}
+
+.language-box.lightgbm {
+    background-color: #C4D5AB;
+}
+
+.language-box:is(
+    .transformers,
+    .pytorch,
+    .bertopic,
+    .scikitlearn,
+    .xgboost,
+    .lightgbm
+) .language-text {
+    color: #202630;
+}
+
 
 /* =========================================================
    LINKS

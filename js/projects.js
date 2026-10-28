@@ -19,7 +19,7 @@ const projects = [
         "title": "Employer Brand Analysis with NLP",
         "category": "data",
         "type": "featured",
-        "image": "assets/projects/employer_brand_nlp.png",
+        "image": "assets/projects/NLP.png",
         "shortDescription": "NLP analysis of Glassdoor reviews comparing Deutsche Bank with four competitors to identify employer brand strengths and improvement priorities.",
         "description": "Analysis of 55,152 reviews across Deutsche Bank, J.P. Morgan, Barclays, Citi and HSBC. A balanced NLP sample of 2,000 reviews per bank combines DistilBERT sentiment analysis and BERTopic topic modelling to compare employee feedback and support HR prioritisation.",
         "technologies": [
@@ -139,7 +139,7 @@ const projects = [
         "title": "Hotel Booking Cancellation Prediction",
         "category": "data",
         "type": "highlight",
-        "image": "assets/projects/hotel_booking_ml.png",
+        "image": "assets/projects/ML.png",
         "shortDescription": "Machine learning project analysing around 119,000 hotel bookings to identify cancellation risk using temporal validation.",
         "description": "Data preparation, exploratory analysis and feature engineering followed by a comparison of six classification algorithms. LightGBM achieved a mean validation AUC of 0.881, with permutation importance used for interpretation. Independent evaluation on new periods is required before deployment.",
         "technologies": [
@@ -224,7 +224,7 @@ const projects = [
         "title": "Generative AI Agent — In Development",
         "category": "data",
         "type": "grid",
-        "image": "assets/projects/agent_ia_movies.png",
+        "image": "assets/projects/Agent-IA.png",
         "shortDescription": "Early-stage generative AI project with a Python notebook structure, environment setup and an implementation roadmap.",
         "description": "Initial project scaffold with notebook sections for objectives, dataset selection, prompts, memory and evaluation. The repository currently documents environment configuration for Gemini; the agent is not yet implemented and the final domain remains pending in the README.",
         "technologies": [
