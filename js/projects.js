@@ -388,10 +388,6 @@ const projects = [
             {
                 text: 'GitHub',
                 url: 'https://github.com/ANortess/LivingSky'
-            },
-            {
-                text: 'Link',
-                url: 'https://la-nova-dolce.vercel.app'
             }
         ]
     }

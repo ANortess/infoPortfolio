@@ -256,6 +256,42 @@
     color: #fc7222;
 }
 
+.skill_main.scikitlearn {
+    background-color: #B5CDD9;
+}
+
+.skill_main.transformers {
+    background-color: #D8BC69;
+}
+
+.skill_main.pytorch {
+    background-color: #E8C2B8;
+}
+
+.skill_tag.lightgbm {
+    background-color: #C4D5AB;
+}
+
+.skill_tag.xgboost {
+    background-color: #A9C7BC;
+}
+
+.skill_tag.bertopic {
+    background-color: #B5A3CD;
+}
+
+.skill_tag.distilbert {
+    background-color: #A9B9D6;
+}
+
+.skills_section.ai .skill_main,
+.skills_section.ai .skill_tag {
+    color: #202630;
+}
+
+.skills_section.ai .skill_main img {
+    object-fit: contain;
+}
 
 /* =====================================================
    PERSONAL SKILLS
